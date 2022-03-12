@@ -1,0 +1,40 @@
+{
+  "name": "git-branch-cleaner",
+  "version": "1.0.0",
+  "description": "A tool for GitHub branch cleanup",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build-lib": "tsc -b",
+    "build-binary": "esbuild src/index.ts --bundle --outfile=dist/github-branch-cleaner.js --platform=node --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goce-cz/github-branch-cleaner.git"
+  },
+  "bin": {
+    "branch-cleaner": "lib/index.js"
+  },
+  "author": "Jiří Staniševský <goce@goce.cz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goce-cz/branch-cleaner/issues"
+  },
+  "homepage": "https://github.com/goce-cz/branch-cleaner#readme",
+  "dependencies": {
+    "@octokit/rest": "^18.12.0",
+    "dotenv": "^16.0.0",
+    "esbuild": "^0.14.26",
+    "git-url-parse": "^11.6.0",
+    "prompts": "^2.4.2",
+    "tslib": "^2.3.1",
+    "yargs": "^17.3.1"
+  },
+  "devDependencies": {
+    "@types/git-url-parse": "^9.0.1",
+    "@types/node": "^17.0.21",
+    "@types/prompts": "^2.0.14",
+    "@types/yargs": "^17.0.8",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}
