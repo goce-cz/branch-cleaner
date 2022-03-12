@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": [
+      "ES2019"
+    ],
+    "moduleResolution": "Node",
+    "module": "CommonJS",
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "importHelpers": true
+  },
+  "include": [
+    "src"
+  ]
+}
